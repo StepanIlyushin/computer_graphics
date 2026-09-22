@@ -1,4 +1,4 @@
-# Запуск: 
+# Запуск для task 3: 
 - в терминале выполните сборку:
   
    `g++ main.cpp bmplib.cpp -o filter.exe`
