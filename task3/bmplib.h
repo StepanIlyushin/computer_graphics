@@ -44,5 +44,9 @@ public:
     bool readBMP(const char* fname);
     bool saveBMP(const char* fname);
     void contrast_filter(bool use8pixels);
+    void set_pixel(int x, int y, RGB color); //безопасная закраска пикселя
+    void draw_line(int x0, int y0, int x1, int y1, RGB color);
+    void fill_wave(int start_x, int start_y, RGB target_color, RGB fill_color);
+    void start_fill(int x, int y, RGB fill_color);
 };
 
