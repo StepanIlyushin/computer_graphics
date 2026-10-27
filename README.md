@@ -1,11 +1,10 @@
 # Запуск для task 3: 
 - в терминале выполните сборку:
   
-   `g++ main.cpp bmplib.cpp -o filter.exe`
-- запустите программу, передав 3 аргумента:
+   `g++ -I include src/Image.cpp src/Graphics.cpp src/Algorithms.cpp main.cpp -o test_app.exe`
+- запустите программу:
   
-  `filter.exe <исходный_файл> <новый_файл> <тип_маски>`
+  `test_app.exe`
 
-  пример:
-
-  `filter.exe input.bmp result_8.bmp 8`
+> [!WARNING]
+> **Внимание:** Тестовая версия без функциональности.
