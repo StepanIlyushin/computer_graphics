@@ -25,3 +25,6 @@ target_include_directories(
     bmplib PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
+
+#включаем строгие предупреждения компилятора
+target_compile_options(bmplib PRIVATE -Wall -Wextra -Wpedantic)
