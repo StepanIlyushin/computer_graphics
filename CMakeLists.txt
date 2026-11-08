@@ -26,5 +26,8 @@ target_include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+#подключаем примеры
+add_subdirectory(examples)
+
 #включаем строгие предупреждения компилятора
 target_compile_options(bmplib PRIVATE -Wall -Wextra -Wpedantic)
